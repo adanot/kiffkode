@@ -8,6 +8,7 @@ const Home = () => {
   const { oktaAuth, authState } = useOktaAuth();
 
   const login = async () => oktaAuth.signInWithRedirect();
+  const logout = async () => oktaAuth.signOut('/');
 
   if(!authState) {
     return <div>Loading...</div>;
@@ -26,6 +27,7 @@ const Home = () => {
     <div>
     <Link to='/'>Home</Link><br/>
     <Link to='/posts'>Posts</Link><br/>
+    <button onClick={logout}>Logout</button>
   </div>
   );
 };
