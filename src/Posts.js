@@ -2,6 +2,8 @@ import './Posts.css';
 import { useOktaAuth } from '@okta/okta-react';
 import {useEffect, useState} from 'react';
 import React from 'react';
+import { Link } from 'react-router-dom';
+
 
 function Posts() {
  
@@ -45,6 +47,7 @@ function handleSubmit(e){
  
   return (
     <div className="Posts">
+        <Link to='/'>Home</Link><br/>
         <button onClick={logout}>Logout</button> :
       <form onSubmit={handleSubmit}> 
         <input type="text" name="new_title" onChange={handleChange}/>
