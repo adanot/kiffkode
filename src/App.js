@@ -1,4 +1,3 @@
-// src/App.js
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, withRouter } from 'react-router-dom';
 import { SecureRoute, Security, LoginCallback } from '@okta/okta-react';

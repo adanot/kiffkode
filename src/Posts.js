@@ -15,7 +15,7 @@ function Posts() {
   })
   const [data, setData] = useState([])
   
-  const { oktaAuth, authState } = useOktaAuth();
+  const { oktaAuth } = useOktaAuth();
   const logout = async () => oktaAuth.signOut('/');
 
   useEffect(()=>{

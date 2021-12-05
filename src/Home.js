@@ -1,4 +1,3 @@
-// src/Home.js
 import { useOktaAuth } from '@okta/okta-react';
 import { Link } from 'react-router-dom';
 
